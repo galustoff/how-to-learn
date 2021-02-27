@@ -18,6 +18,10 @@
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
+  /* overflow контрит header__square-pic, который
+    вылезает за шапку, если поджимать высоту окна
+    браузера снизу */
 }
 
 .logo {
@@ -45,6 +49,7 @@
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
