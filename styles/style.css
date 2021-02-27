@@ -9,6 +9,8 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* ШАПКА */
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -25,16 +27,25 @@
 }
 
 .logo {
-  display: block;
+  margin: 0;
+  border-width: 0;
+  padding: 0;
 }
 
 .logo_place_header {
-  width: 183px;
-  height: 32px;
   position: absolute;
   z-index: 2;
   top: 30px;
   left: 64px;
+  width: 183px;
+  height: 32px;
+  background-image: url('../images/logo_place_header.svg');
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  background-image: url('../images/logo_place_footer.svg');
 }
 
 .header__title {
@@ -83,6 +94,8 @@
   right: 0;
 }
 
+/* ОПИСАНИЕ */
+
 .description {
   display: flex;
   justify-content: center;
@@ -128,6 +141,7 @@
   font-weight: bold;
 }
 
+/* ЦИФРЫ И ФАКТЫ */
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -136,6 +150,8 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+/* ПОДВАЛ */
 
 .footer {
 
