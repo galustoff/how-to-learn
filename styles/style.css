@@ -46,10 +46,13 @@
   width: 183px;
   height: 35px;
   background-image: url('../images/logo_place_footer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header__title {
   display: block;
+  z-index: 2;
   box-sizing: border-box;
   margin: 0;
   padding-left: 64px;
@@ -63,6 +66,7 @@
   margin: 0;
   width: 388px;
   position: absolute;
+  z-index: 2;
   bottom: 30px;
   left: 64px;
   line-height: 25px;
@@ -75,7 +79,6 @@
 }
 
 .header__main-illustration {
-  display: block;
   width: 765px;
   height: 608px;
   position: absolute;
@@ -83,6 +86,14 @@
   bottom: 0;
   right: 0;
 }
+
+.header__image {
+  width: 765px;
+  position: absolute;
+  top: -20px;
+}
+/* Выставил картинку по вертикали в соответствии с брифом.
+  За ориентиры брал границы синего квадрата */
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
