@@ -9,22 +9,11 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* ШАПКА */
-
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: #f2f2f2;
-  overflow: hidden;
-  /* overflow контрит header__square-pic, который
-    вылезает за шапку, если поджимать высоту окна
-    браузера снизу */
-}
+/*
+  Так как один логотип у нас в шапке, а другой в подвале,
+  их стили собираем в одном месте, чтобы не валялись по
+  всему коду где попало.
+*/
 
 .logo {
   margin: 0;
@@ -40,6 +29,36 @@
   width: 183px;
   height: 32px;
   background-image: url('../images/logo_place_header.svg');
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  background-image: url('../images/logo_place_footer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/******************************************************************************
+                                      HEADER
+******************************************************************************/
+
+/*
+  "overflow: hidden" будет контрить синий квадрат,
+  который вылезает за шапку, если поджимать высоту
+  окна браузера снизу.
+*/
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -79,13 +98,16 @@
   right: 0;
 }
 
+/*
+  Выставляем картинку по вертикали в соответствии с
+  брифом. За ориентиры берём границы синего квадрата.
+*/
+
 .header__image {
   width: 765px;
   position: absolute;
   top: -20px;
 }
-/* Выставил картинку по вертикали в соответствии с брифом.
-  За ориентиры брал границы синего квадрата */
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -97,7 +119,13 @@
   right: 0;
 }
 
-/* ОПИСАНИЕ */
+/******************************************************************************
+                                      MAIN
+******************************************************************************/
+
+/**************************************
+              DESCRIPTION
+**************************************/
 
 .description {
   display: flex;
@@ -144,17 +172,14 @@
   font-weight: bold;
 }
 
-/* ЦИФРЫ И ФАКТЫ, КАУФМАН */
+/**************************************
+            DIGITS & KAUFMAN
+**************************************/
 
-      /* ОПИСЫВАЕМ ОБЩИЕ СВОЙСТВА ДВУХ ТАБЛИЦ */
-
-.digits {
-  margin: 0;
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/*
+  Собираем вместе общие
+  стили для обоих блоков
+*/
 
 .section-title {
   margin: 0;
@@ -188,6 +213,16 @@
   padding-top: 60px;
 }
 
+/*
+  Небольшая корректировка
+  для тёмной темы
+*/
+
+.table__cell_theme_dark {
+  width: 200px;
+  padding-top: 80px;
+}
+
 .table__heading {
   margin: 0;
   line-height: 1.15;
@@ -203,7 +238,31 @@
   font-weight: normal;
 }
 
-      /* КОЕ-ЧТО ОТДЕЛЬНО ДЛЯ КАУФМАНА */
+/*
+  Следующим изысканным тегом выбираем всё, у чего есть
+  атрибут "class", значение которого заканчивается на
+  "_them_dark" и тщательно красим буквы в белый цвет.
+*/
+
+*[class$="_theme_dark"] {
+  color: #fff;
+}
+
+/*
+  Маленький блок только для digits
+*/
+
+.digits {
+  margin: 0;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+  Парочка отдельно для kaufman
+*/
 
 .kaufman {
   margin: 0;
@@ -217,17 +276,6 @@
   overflow: hidden;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  padding-top: 80px;
-}
-
-*[class$="_theme_dark"] {
-  color: #fff;
-}
-/* выбираем всё, у чего есть атрибут class, значение которого
-  заканчивается на _them_dark и красим буквы в белый цвет */
-
 .kaufman__triangle {
   position: absolute;
   z-index: -1;
@@ -239,7 +287,9 @@
   background-size: contain;
 }
 
-/* ФЕЙНМАН */
+/**************************************
+              FEYNMAN
+**************************************/
 
 .feynman {
   margin: 0;
@@ -282,7 +332,9 @@
   text-decoration: none;
 }
 
-/* ПОДВАЛ */
+/******************************************************************************
+                                      FOOTER
+******************************************************************************/
 
 .footer {
   min-height: 350px;
@@ -307,14 +359,6 @@
   justify-content: space-between;
 }
 
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url('../images/logo_place_footer.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .footer__author {
   margin: 0;
   padding: 18px 0;
@@ -337,13 +381,6 @@
   list-style-type: none;
 }
 
-.footer__social-icon {
-  margin: 0;
-  padding: 0 10px 0 0;
-  width: 16px;
-  height: 16px;
-}
-
 .footer__column-link {
   color: #fff;
   text-decoration: none;
@@ -352,4 +389,11 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__social-icon {
+  margin: 0;
+  padding: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
 }
