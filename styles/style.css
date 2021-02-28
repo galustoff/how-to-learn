@@ -296,9 +296,12 @@
   padding-top: 60px;
   padding-bottom: 40px;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__column_content_copyright {
+  flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,4 +318,38 @@
 .footer__author {
   margin: 0;
   padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin: 0;
+  padding: 0 0 20px 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  margin: 0;
+  padding: 0 0 16px 0;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  margin: 0;
+  padding: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
