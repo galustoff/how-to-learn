@@ -42,14 +42,6 @@
   background-image: url('../images/logo_place_header.svg');
 }
 
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url('../images/logo_place_footer.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .header__title {
   display: block;
   z-index: 2;
@@ -251,6 +243,7 @@
 
 .feynman {
   margin: 0;
+  height: 790px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -274,7 +267,6 @@
 .feynman__subtitle {
   margin: 0;
   padding-top: 70px;
-  padding-bottom: 350px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -293,9 +285,34 @@
 /* ПОДВАЛ */
 
 .footer {
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #fff;
+}
 
+.footer__columns {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 90%;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
+  width: 183px;
+  height: 35px;
+  background-image: url('../images/logo_place_footer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.footer__author {
+  margin: 0;
+  padding: 18px 0;
 }
