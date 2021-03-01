@@ -20,6 +20,7 @@
   margin: 0;
   border-width: 0;
   padding: 0;
+  width: 183px;
 }
 
 .logo_place_header {
@@ -27,13 +28,11 @@
   z-index: 2;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
   background-image: url('../images/logo_place_header.svg');
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
   background-image: url('../images/logo_place_footer.svg');
   background-size: contain;
@@ -212,16 +211,6 @@
   padding-top: 60px;
 }
 
-/*
-  Небольшая корректировка
-  для тёмной темы
-*/
-
-.table__cell_theme_dark {
-  width: 200px;
-  padding-top: 80px;
-}
-
 .table__heading {
   margin: 0;
   line-height: 1.15;
@@ -236,15 +225,26 @@
   font-size: 18px;
   font-weight: normal;
 }
-
 /*
-  Следующим изысканным тегом выбираем всё, у чего есть
-  атрибут "class", значение которого заканчивается на
-  "_them_dark" и тщательно красим буквы в белый цвет.
+  Небольшие корректировки
+  для тёмной темы
 */
 
-*[class$="_theme_dark"] {
-  color: #fff;
+.section-title_theme_dark {
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  z-index: 1;
+}
+
+.table_theme_dark {
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  padding-top: 80px;
 }
 
 /*
@@ -264,6 +264,7 @@
 */
 
 .kaufman {
+  color: #fff;
   margin: 0;
   padding: 90px 0;
   display: flex;
@@ -271,13 +272,11 @@
   align-items: center;
   background-color: #1f1f1f;
   position: relative;
-  z-index: -2;
   overflow: hidden;
 }
 
 .kaufman__triangle {
   position: absolute;
-  z-index: -1;
   top: 0;
   right: -210px;
   width: 877px;
@@ -292,6 +291,7 @@
 
 .feynman {
   margin: 0;
+  padding: 100px 0 0 0;
   height: 790px;
   position: relative;
   display: flex;
@@ -305,7 +305,7 @@
 
 .feynman__title {
   margin: 0;
-  padding-top: 100px;
+  padding: 0 0 70px 0;
   width: 648px;
   text-align: center;
   line-height: 1.15;
@@ -315,7 +315,7 @@
 
 .feynman__subtitle {
   margin: 0;
-  padding-top: 70px;
+  padding: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -328,6 +328,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2f80ed;
   text-decoration: none;
 }
 
