@@ -9,6 +9,12 @@
 @import url('../blocks/page/logo/_place/logo_place_header.css');
 @import url('../blocks/page/logo/_place/logo_place_footer.css');
 
+/* Общее для заголовков и подзаголовков */
+@import url('../blocks/page/content/section-title/section-title.css');
+@import url('../blocks/page/content/section-title/_theme/section-title_theme_dark.css');
+@import url('../blocks/page/content/section-subtitle/section-subtitle.css');
+@import url('../blocks/page/content/section-subtitle/_theme/section-subtitle_theme_dark.css');
+
 /* Шапка */
 @import url('../blocks/page/header/header.css');
 @import url('../blocks/page/header/__title/header__title.css');
@@ -25,11 +31,15 @@
 @import url('../blocks/page/content/description/two-columns/__paragraph/two-columns__paragraph.css');
 @import url('../blocks/page/content/description/two-columns/__span-accent/two-columns__span-accent.css');
 
+/* Блок "techniques" */
+@import url('../blocks/page/content/techniques/techniques.css');
+@import url('../blocks/page/content/cards/cards.css');
+@import url('../blocks/page/content/cards/__item/cards__item.css');
+@import url('../blocks/page/content/cards/__image/cards__image.css');
+@import url('../blocks/page/content/cards/__title/cards__title.css');
+@import url('../blocks/page/content/cards/__description/cards__description.css');
+
 /* Общие стили для блоков "digits" и "kaufman" */
-@import url('../blocks/page/content/section-title/section-title.css');
-@import url('../blocks/page/content/section-title/_theme/section-title_theme_dark.css');
-@import url('../blocks/page/content/section-subtitle/section-subtitle.css');
-@import url('../blocks/page/content/section-subtitle/_theme/section-subtitle_theme_dark.css');
 @import url('../blocks/page/content/table/table.css');
 @import url('../blocks/page/content/table/_theme/table_theme_dark.css');
 @import url('../blocks/page/content/table/__cell/table__cell.css');
