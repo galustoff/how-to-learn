@@ -39,6 +39,20 @@
 @import url('../blocks/page/content/cards/__title/cards__title.css');
 @import url('../blocks/page/content/cards/__description/cards__description.css');
 
+/* Блок "video" */
+@import url('../blocks/page/content/video/video.css');
+@import url('../blocks/page/content/video/__iframes/video__iframes.css');
+@import url('../blocks/page/content/video/__iframe/video__iframe.css');
+
+/* Блок "oakley" */
+@import url('../blocks/page/content/oakley/oakley.css');
+
+/* Блок "feynman" */
+@import url('../blocks/page/content/feynman/feynman.css');
+@import url('../blocks/page/content/feynman/__title/feynman__title.css');
+@import url('../blocks/page/content/feynman/__subtitle/feynman__subtitle.css');
+@import url('../blocks/page/content/feynman/__link/feynman__link.css');
+
 /* Общие стили для блоков "digits" и "kaufman" */
 @import url('../blocks/page/content/table/table.css');
 @import url('../blocks/page/content/table/_theme/table_theme_dark.css');
@@ -50,15 +64,26 @@
 /* Блок "digits" */
 @import url('../blocks/page/content/digits/digits.css');
 
-/* Блок "feynman" */
-@import url('../blocks/page/content/feynman/feynman.css');
-@import url('../blocks/page/content/feynman/__title/feynman__title.css');
-@import url('../blocks/page/content/feynman/__subtitle/feynman__subtitle.css');
-@import url('../blocks/page/content/feynman/__link/feynman__link.css');
+/* Блок "khan" */
+@import url('../blocks/page/content/khan/khan.css');
+@import url('../blocks/page/content/khan/__container/khan__container.css');
+@import url('../blocks/page/content/khan/__author/khan__author.css');
+@import url('../blocks/page/content/khan/__title/khan__title.css');
+@import url('../blocks/page/content/khan/__quote/khan__quote.css');
+@import url('../blocks/page/content/khan/__quote-author/khan__quote-author.css');
+@import url('../blocks/page/content/khan/__quote-author-subline/khan__quote-author-subline.css');
+@import url('../blocks/page/content/khan/__book-container/khan__book-container.css');
+@import url('../blocks/page/content/khan/__book-pic/khan__book-pic.css');
+@import url('../blocks/page/content/khan/__buy-link/khan__buy-link.css');
 
 /* Блок "kaufman" */
 @import url('../blocks/page/content/kaufman/kaufman.css');
 @import url('../blocks/page/content/kaufman/__triangle/kaufman__triangle.css');
+
+/* Блок "resources" */
+@import url('../blocks/page/content/resources/resources.css');
+@import url('../blocks/page/content/resources/__logo-zone/resources__logo-zone.css');
+@import url('../blocks/page/content/resources/__logo/resources__logo.css');
 
 /* Подвал */
 @import url('../blocks/page/footer/footer.css');
