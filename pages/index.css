@@ -1,29 +1,47 @@
-/* normalize & keyframes */
+/******************************************************************************
+                                  ОБЩИЕ СТИЛИ
+******************************************************************************/
+
+/* Из vendor */
 @import url('../vendor/normalize.css');
 @import url('../vendor/keyframes.css');
 
-/* Общее для всей страницы */
+/* Для всей страницы */
 @import url('../blocks/page/page.css');
 
-/* Общее для ссылок */
+/* Для ссылок */
 @import url('../blocks/page/link/link.css');
 @import url('../blocks/page/link/_hover/link_hover.css');
 
-/* Общее для логотипов */
+/* Для логотипов */
 @import url('../blocks/page/logo/logo.css');
 @import url('../blocks/page/logo/_place/logo_place_header.css');
 @import url('../blocks/page/logo/_place/logo_place_footer.css');
 
-/* Общее для заголовков и подзаголовков */
+/* Для заголовков и подзаголовков */
 @import url('../blocks/page/content/section-title/section-title.css');
 @import url('../blocks/page/content/section-title/_theme/section-title_theme_dark.css');
 @import url('../blocks/page/content/section-subtitle/section-subtitle.css');
 @import url('../blocks/page/content/section-subtitle/_theme/section-subtitle_theme_dark.css');
 
-/* Анимация */
+/* Для анимированых объектов */
 @import url('../blocks/page/rotation/rotation.css');
 
-/* Шапка */
+/* Для табличного представления ("digits", "kaufman") */
+@import url('../blocks/page/content/table/table.css');
+@import url('../blocks/page/content/table/_theme/table_theme_dark.css');
+@import url('../blocks/page/content/table/__cell/table__cell.css');
+@import url('../blocks/page/content/table/__cell/_theme/table__cell_theme_dark.css');
+@import url('../blocks/page/content/table/__heading/table__heading.css');
+@import url('../blocks/page/content/table/__text/table__text.css');
+
+
+/******************************************************************************
+                                  СТИЛИ БЛОКОВ
+******************************************************************************/
+
+
+/* Блок "header" */
 @import url('../blocks/page/header/header.css');
 @import url('../blocks/page/header/__title/header__title.css');
 @import url('../blocks/page/header/__subtitle/header__subtitle.css');
@@ -61,14 +79,6 @@
 @import url('../blocks/page/content/feynman/__subtitle/feynman__subtitle.css');
 @import url('../blocks/page/content/feynman/__link/feynman__link.css');
 
-/* Общие стили для блоков "digits" и "kaufman" */
-@import url('../blocks/page/content/table/table.css');
-@import url('../blocks/page/content/table/_theme/table_theme_dark.css');
-@import url('../blocks/page/content/table/__cell/table__cell.css');
-@import url('../blocks/page/content/table/__cell/_theme/table__cell_theme_dark.css');
-@import url('../blocks/page/content/table/__heading/table__heading.css');
-@import url('../blocks/page/content/table/__text/table__text.css');
-
 /* Блок "digits" */
 @import url('../blocks/page/content/digits/digits.css');
 
@@ -97,7 +107,7 @@
 @import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_strelka.css');
 @import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_polka.css');
 
-/* Подвал */
+/* Блок "footer" */
 @import url('../blocks/page/footer/footer.css');
 @import url('../blocks/page/footer/__columns/footer__columns.css');
 @import url('../blocks/page/footer/__column/_content/footer__column_content_copyright.css');
