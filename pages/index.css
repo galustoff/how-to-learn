@@ -4,6 +4,10 @@
 /* Общее для всей страницы */
 @import url('../blocks/page/page.css');
 
+/* Общее для ссылок */
+@import url('../blocks/page/link/link.css');
+@import url('../blocks/page/link/_hover/link_hover.css');
+
 /* Общее для логотипов */
 @import url('../blocks/page/logo/logo.css');
 @import url('../blocks/page/logo/_place/logo_place_header.css');
@@ -84,6 +88,10 @@
 @import url('../blocks/page/content/resources/resources.css');
 @import url('../blocks/page/content/resources/__logo-zone/resources__logo-zone.css');
 @import url('../blocks/page/content/resources/__logo/resources__logo.css');
+@import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_arzamas.css');
+@import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_n1.css');
+@import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_strelka.css');
+@import url('../blocks/page/content/resources/__logo/_bg-img/resources__logo_bg-img_polka.css');
 
 /* Подвал */
 @import url('../blocks/page/footer/footer.css');
